@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MERRY CHRISTMAS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="as" class="christmas-message">Merry Christmas</div>
+    <div class="tree-container">
+        <img src="big_tree.png" alt="Cây thông" class="tree-icon">
+    </div>
+
+    <div class="container">
+        <button id="showButton">
+            card and music
+        </button>
+    </div>
+
+    <div id="guideInfo" class="hidden">
+        <button id="closeButton" class="close-btn">X</button>
+        <div id="ax" class="card">
+            <div class="imgBox">
+                <div class="bark"></div>
+                <img
+                    src="mery.png">
+            </div>
+            <div class="details">
+                <h4 class="color2 margin">MERRY CHRISTMAS</h4>
+                <p>クリスマスが来ました。</p>
+                <p>あなたに温かくて甘い祝祭の季節をお祈りします。</p>
+                <p>私たちの友情のように甘くて素晴らしい日々を。</p>
+                <p>来年ももっとたくさんの</p>
+                <p>素晴らしい思い出を作りましょう。</p>
+                <p class="text-right">メリークリスマス！</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+ 
+
+    <script>
+    document.getElementById('showButton').addEventListener('click', function() {
+        var audio = document.createElement('audio');
+        audio.src = 'We-Wish-You-chosic.mp3';
+        audio.autoplay = true;
+        audio.loop = true;
+        document.body.appendChild(audio);
+    });
+    </script>
+</body>
+
+</html>
